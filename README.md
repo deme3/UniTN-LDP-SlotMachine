@@ -1,5 +1,5 @@
 # UniTN-LDP-SlotMachine
-Simulating a gambling game according to the following demands
+[(Italiano)](README-it.md) Simulating a gambling game according to the following demands
 
 1. `✓` Write an application that resembles the given example of a Slot Machine game.
    The code must be documented using Javadocs.
