@@ -2,6 +2,9 @@ package it.unitn.disi.lingprogmod1.deme3.SlotHeader;
 
 import javafx.scene.layout.VBox;
 
+/**
+ * Stylish Slot Machine Header ({@link SlotHeaderScriptLabel} + {@link SlotHeaderLabel})
+ */
 public class SlotHeader extends VBox {
     public SlotHeader() {
         super();

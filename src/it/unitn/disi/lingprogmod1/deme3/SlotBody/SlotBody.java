@@ -25,6 +25,9 @@ public class SlotBody extends GridPane {
         setUpScoreRow();
     }
 
+    /**
+     * Sets up a {@link SlotWheelsBox} inside first row of Body
+     */
     public void setUpWheels() {
         SlotWheelsBox box = new SlotWheelsBox();
         add(box, 0, 0);
@@ -34,6 +37,9 @@ public class SlotBody extends GridPane {
         GameSession.initWheelsBox(box);
     }
 
+    /**
+     * Sets up score fields in second row of Body
+     */
     public void setUpScoreRow() {
         HBox h = new HBox();
         SlotBody.credits = new ScoreField("Credits", 0);

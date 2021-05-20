@@ -8,6 +8,9 @@ import javafx.scene.input.MouseEvent;
 
 import java.util.ArrayList;
 
+/**
+ * Represents the current Slot Machine session
+ */
 public class GameSession {
     public static SlotButton payButton;
     public static SlotButton newGameButton;
@@ -26,6 +29,11 @@ public class GameSession {
                     score;
     public ArrayList<CoinButton> coins;
 
+    /**
+     * Represents the current Slot Machine session
+     * @param startingCredit    Default credit for each time the Slot Machine is reset  (Pay operation)
+     * @param startingScore     Default score for each time the Slot Machine is reset   (Pay operation)
+     */
     public GameSession(double startingCredit, double startingScore) {
         this.startingCredit = this.credits = startingCredit;
         this.startingScore = this.score = startingScore;

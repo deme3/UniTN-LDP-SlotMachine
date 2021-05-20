@@ -10,6 +10,9 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.RowConstraints;
 import javafx.scene.paint.Color;
 
+/**
+ * Slot Machine root node
+ */
 public class SlotGrid extends GridPane {
     public SlotGrid() {
         super();
@@ -22,16 +25,27 @@ public class SlotGrid extends GridPane {
         getColumnConstraints().add(col1);
     }
 
+    /**
+     * Set up stylish title for our Slot Machine
+     * @param slotHeader {@link SlotHeader}
+     */
     public void setUpHeader(SlotHeader slotHeader) {
         slotHeader.setAlignment(Pos.CENTER);
         this.add(slotHeader, 0, 0);
     }
 
+    /**
+     * Set up the specified {@link SlotBody} as second row in Grid
+     * @param body {@link SlotBody}
+     */
     public void setUpBody(SlotBody body) {
         body.setAlignment(Pos.CENTER);
         add(body, 0, 1);
     }
 
+    /**
+     * Set up game buttons row (last row in Grid)
+     */
     public void setUpFooter() {
         SlotButton newGameButton = new SlotButton("NEW GAME");
         SlotButton payButton = new SlotButton("PAY");

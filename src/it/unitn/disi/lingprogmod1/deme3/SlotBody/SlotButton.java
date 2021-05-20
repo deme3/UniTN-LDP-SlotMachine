@@ -15,6 +15,11 @@ public class SlotButton extends Button implements EventHandler<MouseEvent> {
     private static final int BORDER_RADIUS = 8;
     public Color gradientPrimaryStop = Color.valueOf("#A2A2A2");
     public Color gradientSecondaryStop = Color.valueOf("#555555");
+
+    /**
+     * {@link SlotButton} Default constructor
+     * @param text  Text to show on the button
+     */
     public SlotButton(String text) {
         super(text);
 

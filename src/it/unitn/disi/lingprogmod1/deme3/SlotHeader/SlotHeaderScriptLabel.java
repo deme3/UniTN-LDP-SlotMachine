@@ -4,6 +4,9 @@ import javafx.scene.paint.Paint;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 
+/**
+ * Stylish Header Label with script bold font, comes before {@link SlotHeaderLabel}
+ */
 public class SlotHeaderScriptLabel extends Text {
     public SlotHeaderScriptLabel(String text) {
         super(text);

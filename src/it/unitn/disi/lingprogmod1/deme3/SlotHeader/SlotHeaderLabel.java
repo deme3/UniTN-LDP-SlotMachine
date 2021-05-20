@@ -6,6 +6,10 @@ import javafx.scene.shape.StrokeType;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 
+/**
+ * Stylish Header Label: Strong text with thick stroke and gradient foreground<br />
+ * Comes after {@link SlotHeaderScriptLabel}
+ */
 public class SlotHeaderLabel extends Text {
     public SlotHeaderLabel(String text) {
         super(text);

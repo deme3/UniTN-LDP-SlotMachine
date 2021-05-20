@@ -20,10 +20,19 @@ public class SlotWheel extends StackPane implements EventHandler<MouseEvent> {
     public final Random rng = new Random();
 
     private String currentSymbol;
+
+    /**
+     * Getter for wheel {@link SlotWheel#currentSymbol}
+     * @return
+     */
     public String getCurrentSymbol() {
         return currentSymbol;
     }
 
+    /**
+     * Private setter for wheel {@link SlotWheel#currentSymbol}
+     * @param currentSymbol New symbol
+     */
     private void setCurrentSymbol(String currentSymbol) {
         this.currentSymbol = currentSymbol;
         this.symbol.setText(currentSymbol);
@@ -44,11 +53,18 @@ public class SlotWheel extends StackPane implements EventHandler<MouseEvent> {
         addEventHandler(MouseEvent.MOUSE_CLICKED, this);
     }
 
+    /**
+     * Generates a random symbol string
+     * @return  Random symbol
+     */
     public String randomSymbol() {
         int randIndex = rng.nextInt(5);
         return SYMBOLS[randIndex];
     }
 
+    /**
+     * Updates this wheel with a new random symbol
+     */
     public void rollSymbol() {
         String newSymbol = this.randomSymbol();
         setCurrentSymbol(newSymbol);

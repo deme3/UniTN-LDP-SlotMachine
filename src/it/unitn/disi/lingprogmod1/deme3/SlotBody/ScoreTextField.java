@@ -13,6 +13,11 @@ public class ScoreTextField extends StackPane {
     private double score;
     private int scorePadding = 6;
     private Text scoreText;
+
+    /**
+     * {@link ScoreTextField} Default constructor
+     * @param score Initial score
+     */
     public ScoreTextField(int score) {
         super();
         setBackground(new Background(new BackgroundFill(Paint.valueOf("#000000"), null, null)));

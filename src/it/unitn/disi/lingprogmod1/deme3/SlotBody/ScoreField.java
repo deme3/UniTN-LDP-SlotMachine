@@ -9,6 +9,12 @@ public class ScoreField extends VBox {
     public double score;
     private Text labelText;
     private ScoreTextField scoreTextField;
+
+    /**
+     *
+     * @param label Text to show above the score
+     * @param score Score number
+     */
     public ScoreField(String label, int score) {
         this.score = score;
 
@@ -20,10 +26,19 @@ public class ScoreField extends VBox {
         setAlignment(Pos.CENTER);
     }
 
+    /**
+     * Setter for field label text
+     * @param label New text
+     */
     public void setLabelText(String label) {
         this.labelText.setText(label);
     }
 
+    /**
+     * Setter for {@link ScoreField#score}<br/>
+     * Updates score graphical text field
+     * @param score
+     */
     public void setScore(double score) {
         this.score = score;
         this.scoreTextField.setScore(score);
